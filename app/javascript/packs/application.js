@@ -1,4 +1,8 @@
 // app/javascript/packs/application.js
+import 'bootstrap'
+import '../stylesheets/application'
+
+
 window.toggleVisibility = function(elementId) {
   var element = document.getElementById(elementId);
   if (element.style.display === "none") {

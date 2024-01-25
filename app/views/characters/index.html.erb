@@ -6,13 +6,27 @@
     Character INDEX
 -->
 
-<h1>Characters</h1>
-<% @characters.each do |character| %>
-  <p><%= character.name %></p>
-  <p>Primary Skill: <%= character.primary_skill %></p>
-  <p>Role: <%= character.role %></p>
-  <p>Strength: <%= character.strengths %></p>
-  <p>Weakness: <%= character.weaknesses %></p>
-<% end %>
+
+
+<!-- app/views/characters/index.html.erb -->
+<div class="container">
+  <h1 class="my-4">Characters</h1>
+  <div class="row">
+    <% @characters.each do |character| %>
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <div class="card-body">
+            <h5 class="card-title"><%= character.name %></h5>
+            <p class="card-text">Primary Skill: <%= character.primary_skill %></p>
+              <p class="card-text">Role: <%= character.role %></p>
+              <p class="card-text">Strength: <%= character.strengths %></p>
+              <p class="card-text">Weakness: <%= character.weaknesses %></p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+
 
 
