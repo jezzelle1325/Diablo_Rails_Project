@@ -1,0 +1,22 @@
+<!--
+    Name: Jezreelson Sobremonte
+    Course: WEBD-3008 (248294)
+    Intro to Rails Project
+
+    Items INDEX
+-->
+
+
+<%= form_with(url: items_path, method: :get) do |form| %>
+  <%= form.text_field :search, placeholder: "Search items" %>
+  <%= form.submit "Search" %>
+<% end %>
+
+<h1>Items</h1>
+<% @items.each do |item| %>
+  <p><%= item.name %></p>
+  <p>Type: <%= item.item_type %></p>
+  <p>Rarity: <%= item.rarity %></p>
+  <p>Attributes: <%= item.attributes_item %></p>
+<% end %>
+

@@ -1,0 +1,14 @@
+<!--
+    Name: Jezreelson Sobremonte
+    Course: WEBD-3008 (248294)
+    Intro to Rails Project
+
+    Items SHOW
+-->
+<%= link_to 'More Info', '#', onclick: "toggleVisibility('more-info')" %>
+<div id="more-info" style="display:none;">
+  <h1><%= @item.name %></h1>
+  <p>Type: <%= @item.item_type %></p>
+  <p>Rarity: <%= @item.rarity %></p>
+  <p>Attributes: <%= @item.item_attributes %></p>
+</div>

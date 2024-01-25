@@ -1,0 +1,20 @@
+<!--
+    Name: Jezreelson Sobremonte
+    Course: WEBD-3008 (248294)
+    Intro to Rails Project
+
+    Monsters INDEX
+-->
+
+
+<h1>Monsters</h1>
+<% @monsters.each do |monster| %>
+  <p><%= monster.name %></p>
+  <p>Location: <%= monster.location %></p>
+  <p>Type: <%= monster.monster_type %></p>
+  <p>HP: <%= monster.hit_points %></p>
+  <p>Damage: <%= monster.damage %></p>
+<% end %>
+
+
+

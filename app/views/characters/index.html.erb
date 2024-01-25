@@ -1,0 +1,18 @@
+<!--
+    Name: Jezreelson Sobremonte
+    Course: WEBD-3008 (248294)
+    Intro to Rails Project
+
+    Character INDEX
+-->
+
+<h1>Characters</h1>
+<% @characters.each do |character| %>
+  <p><%= character.name %></p>
+  <p>Primary Skill: <%= character.primary_skill %></p>
+  <p>Role: <%= character.role %></p>
+  <p>Strength: <%= character.strengths %></p>
+  <p>Weakness: <%= character.weaknesses %></p>
+<% end %>
+
+
