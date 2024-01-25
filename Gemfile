@@ -29,7 +29,10 @@ gem "jbuilder"
 # In your Gemfile
 gem 'bootstrap', '~> 5.0'
 
-gem 'sassc', '~> 2.0'
+gem 'sassc-rails'
+
+gem 'webpacker'
+
 
 
 # Use Redis adapter to run Action Cable in production
@@ -75,7 +78,7 @@ group :test do
   gem "selenium-webdriver"
 end
 
-group :development, :test do
-  gem 'rspec-rails', '~> 5.0'
-end
+# group :development, :test do
+#   gem 'rspec-rails', '~> 5.0'
+# end
 
