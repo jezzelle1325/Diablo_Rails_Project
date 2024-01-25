@@ -22,3 +22,14 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+# Diablo Rails Project
+
+## Features
+- List, show, search, and filter items and monsters.
+- Interactive UI elements using JavaScript.
+- Responsive design using Bootstrap.
+
+## How to Use
+- Navigate to `/items` to view and search for items.
+- Detailed item information can be viewed by clicking on individual items.
