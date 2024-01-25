@@ -25,5 +25,6 @@ Monster.create(name: "Andariel", location: "Catacombs Level 4", monster_type: "A
 Monster.create(name: "Duriel", location: "Tal Rasha's Tomb", monster_type: "Act II Boss", hit_points: 2000, damage: 150)
 Monster.create(name: "Mephisto", location: "Durance of Hate Level 3", monster_type: "Act III Boss", hit_points: 3000, damage: 200)
 Monster.create(name: "Diablo", location: "Chaos Sanctuary", monster_type: "Act IV Boss", hit_points: 4000, damage: 250)
+Monster.create(name: "Baal", location: "The Worldstone Chamber", monster_type: "Act I5 Boss", hit_points: 5000, damage: 300)
 
 
